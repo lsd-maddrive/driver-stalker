@@ -15,3 +15,8 @@ def get_repo_dpath() -> Path:
 
     err_msg = "Reposity root dpath is not found."
     raise FileNotFoundError(err_msg)
+
+
+def get_data_dpath() -> Path:
+    """Get absolute path to data directory."""
+    return get_repo_dpath() / "data"
